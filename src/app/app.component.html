@@ -3,15 +3,29 @@
     <h2>Busquedas</h2>
     <hr />
     <ul class="list-group">
-      <li class="list-group-item">Buscar país</li>
-      <li class="list-group-item">Por región</li>
-      <li class="list-group-item">Por capital</li>
+      <li
+        routerLink=""
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="list-group-item"
+      >
+        Buscar país
+      </li>
+      <li routerLink="region" routerLinkActive="active" class="list-group-item">
+        Por región
+      </li>
+      <li
+        routerLink="capital"
+        routerLinkActive="active"
+        class="list-group-item"
+      >
+        Por capital
+      </li>
     </ul>
   </div>
 
   <div class="col">
     <router-outlet></router-outlet>
-
     <hr />
   </div>
 </div>
